@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Portfólio Jhonnathan Ryan</title>
+    <style>
+        /* Ajuste para as imagens dentro dos modais 2 e 3 */
+        #modal2 .modal-body img,
+        #modal3 .modal-body img {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container text-center">
+        <img src="img/avatar-perfil.png" alt="avatar do Jhonnathan" class="rounded-circle" width="150" height="150" />
+        <p class="lead">Eu sou o Jhonnathan Ryan</p>
+        <h1>desenvolvo codigos de programação</h1>
+        <p>
+            Estudo na rede pública do Estado de São Paulo, em escola do programa PEI.
+        </p>
+        <p>
+            Sou estudnte da rede pública, desenvolvo codigos em javaScript
+        </p>
+        <p>Minhas habilidades</p>
+        <div>
+            <p class="badge bg-secondary">Inglês Basico</p>
+            <p class="badge bg-secondary">HTML e CSS basico</p>
+            <p class="badge bg-secondary">JavaScript basico</p>
+            <p class="badge bg-secondary">Micro:bit</p>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <h2>Meus projetos</h2>
+        <div class="row">
+            <!-- Projeto 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto-1.png" class="card-img-top" alt="Imagem do projeto corrida" />
+                    <div class="card-body">
+                        <h5 class="card-title">projeto Corrida</h5>
+                        <p class="card-text">
+                            Neste projeto desenvolvo um codigo para um jogo de corrida:
+                        </p>
+                        <ul>
+                            <li>viatura policia: se move ao apertar a tecla "a" do teclado</li>
+                            <li>carro de formula 1: move-se quando apertar a tecla "s"</li>
+                            <li>motocicleta: se move ao pressionar a tecla "f"</li>
+                        </ul>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">
+                            Veja o projeto
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto-2.png" class="card-img-top" alt="Imagem do projeto monalisa" />
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto Monalisa</h5>
+                        <p class="card-text">
+                            Nesse projeto desenvolvo algo interativo, baseado no fenomeno da monalisa, onde os olhos perseguem o mouse
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">
+                            Veja o projeto
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projeto 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/projeto-3.png" class="card-img-top" alt="Imagem do projeto quente frio" />
+                    <div class="card-body">
+                        <h5 class="card-title">Projeto Quente frio</h5>
+                        <p class="card-text">
+                            nesse projeto desenvolvi um jogo baseado no jogo quente e frio, onde voce tem que achar o ponto pré determinado 
+                        </p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">
+                            Veja o projeto
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal 1 -->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content text-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title">Corrida maluca</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                            Eu com o auxilio do meu professor, desenvolvi um modo que ao iniciar a corrida, a ela ficasse da cor verde e ao finalizar ficasse vermelho.
+                        </p>
+                   
+                   
+                </div>
+                <div class="modal-footer">
+                    <a href="#">Ver código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content text-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title">Monalisa</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Envolve programação básica e montagem de circuitos simples.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#">Ver código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content text-dark">
+                <div class="modal-header">
+                    <h5 class="modal-title">pegando fogo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        A aula explora o mecanismo de sensores, onde relaciona o movimento do mouse para a direção onde deve olhar.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#">Ver código do projeto</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container py-5 text-center">
+        <h2>Entre em contato</h2>
+        <div>
+            <a href="jhonnathanryan56789@gmail.com</a>
+        </div>
+        <p class="my-5">© 2025. Produzido por Jhonnathan.</p>
+    </footer>
